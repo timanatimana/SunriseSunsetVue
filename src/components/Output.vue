@@ -17,10 +17,19 @@ const pickedLocation = computed(() =>
 <template>
   <div class="card has-background-warning mb-5">
     <header class="card-header">
-      <p v-if="pickedLocation && sunriseSunsetData" class="card-header-title">
-        {{ sunriseSunsetData.locationName }} - on
-        {{ dayJs(sunriseSunsetData.dateString).format("dddd, MMM D, YYYY") }}
-      </p>
+      <div className="column">
+        <div className="row has-background-dark has-text-light">
+          <img className="ml-1 mr-2" alt="Vue logo" src="@/assets/vue.svg" />
+          <img className="mr-2" alt="Vite logo" src="@/assets/vite.svg" />
+          <img alt="TS logo" src="@/assets/ts_logo.svg" />
+          <div>Vue 3 - Vite - Typescript</div>
+        </div>
+        <p v-if="pickedLocation && sunriseSunsetData" class="card-header-title">
+          {{ sunriseSunsetData.locationName }} - on
+          {{ dayJs(sunriseSunsetData.dateString).format("dddd, MMM D, YYYY") }}
+        </p>
+        <p v-else>&nbsp;</p>
+      </div>
     </header>
     <div class="card-content">
       <div v-if="sunriseSunsetData" class="columns is-mobile">

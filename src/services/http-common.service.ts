@@ -4,7 +4,7 @@ class HttpService {
   private port = process.env.SERVER_PORT || 7043;
   private x_api_key = process.env.X_API_KEY || "1234Test";
   private baseUrl_LocalHost = `https://localhost:${this.port}/`;
-  private baseUrl = process.env.SERVER_API_BASE_URL; //|| this.baseUrl_LocalHost;
+  private baseUrl = process.env.SERVER_API_BASE_URL; // || this.baseUrl_LocalHost;
 
   getBaseUrl = () => {
     return this.baseUrl;

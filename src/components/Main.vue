@@ -17,8 +17,7 @@ import Output from "@/components/Output.vue";
           <p>
             <strong class="has-text-warning"> Powered by </strong>
             <a href="https://sunrisesunset.io">SunriseSunset.io</a> and
-            positionstack
-            <a href="https://positionstack.com/">positionstack</a>.
+            <a href="https://positionstack.com/"> positionstack</a>.
           </p>
         </div>
       </footer>

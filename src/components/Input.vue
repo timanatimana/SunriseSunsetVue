@@ -88,7 +88,7 @@ const format = () => {
               v-if="locationValid !== null && !locationValid"
               class="help is-danger"
             >
-              {{ "Please enter a valid location (min 3 letters)" }}
+              Please enter a valid location (min 3 letters)"
             </p>
             <p v-else-if="locationError !== null" class="help is-danger">
               {{ locationError }}

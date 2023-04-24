@@ -27,7 +27,7 @@ const globalState = reactive<SunriseSunsetState>({
 export default function useSunriseSunset(): {
   getSunriseSunset: (
     pickedLocation: ILocationData | undefined,
-    pickedDate: Date | null
+    pickedDate: Nullable<Date>
   ) => Promise<void>;
   isLoading: Ref<boolean>;
   error: Ref<Nullable<string>>;
@@ -35,7 +35,7 @@ export default function useSunriseSunset(): {
 } {
   const getSunriseSunset = async (
     pickedLocation: ILocationData | undefined,
-    pickedDate: Date | null
+    pickedDate: Nullable<Date>
   ) => {
     if (pickedLocation === undefined) return;
 
